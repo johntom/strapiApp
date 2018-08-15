@@ -1,0 +1,29 @@
+
+{
+  "connection": "parktower",
+  "collectionName": "gymaggregate",
+  "info": {
+    "name": "gymaggregate",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "tenant": {
+      "type": "text"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "CYM": {
+      "type": "text"
+    },
+    "year": {
+      "type": "text"
+    },
+    "month": {
+      "type": "text"
+    }
+  }
+}

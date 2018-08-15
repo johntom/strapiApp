@@ -1,0 +1,108 @@
+{
+  "connection": "default",
+  "collectionName": "client",
+  "info": {
+    "name": "client",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+ 
+    "CompanyName": {
+      "type": "string"
+    },
+    "Client": {
+      "type": "integer"
+    },
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+   
+    "ID": {
+      "type": "integer"
+    },
+    "Position": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Fax": {
+      "type": "string"
+    },
+    "Cellular": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "Zip": {
+      "type": "string"
+    },
+    "Notes": {
+      "type": "string"
+    },
+    "Hidden": {
+      "type": "string"
+    },
+    "Address2": {
+      "type": "string"
+    },
+    "Salutation": {
+      "type": "string"
+    },
+    "Pager": {
+      "type": "string"
+    },
+    "PhoneReq": {
+      "type": "string"
+    },
+    "Entered": {
+      "type": "string"
+    },
+    "Modified": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "TitleLegacy": {
+      "type": "string"
+    },
+    "PhoneHome": {
+      "type": "string"
+    },
+    "PhoneAlt": {
+      "type": "string"
+    },
+    "TypeLegacy": {
+      "type": "string"
+    },
+    "CompanyLegacy": {
+      "type": "string"
+    },
+    "Justforfun": {
+      "type": "string"
+    }
+  }
+}

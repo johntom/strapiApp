@@ -1,0 +1,67 @@
+{
+  "routes": [{
+      "method": "GET",
+      "path": "/uploadcustom",
+      "handler": "Uploadcustom.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uploadcustom/count",
+      "handler": "Uploadcustom.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uploadcustom/:_id",
+      "handler": "Uploadcustom.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/uploadcustom",
+      "handler": "Uploadcustom.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/uploadcustom/:_id",
+      "handler": "Uploadcustom.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/uploadcustom/:_id",
+      "handler": "Uploadcustom.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/uploadcustom/uploadxls",
+      "handler": "Uploadcustom.uploadfiles",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+    "method": "POST",
+    "path": "/uploadcustom/uploadxls",
+    "handler": "Uploadcustom.uploadxls",
+    "config": {
+      "policies": []
+    }
+  }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "connection": "parktower",
+  "collectionName": "gym",
+  "info": {
+    "name": "gym",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "MessageLocalDateTime": {
+      "type": "date"
+    },
+    "Name": {
+      "type": "text"
+    },
+    "Tenant": {
+      "type": "text"
+    },
+    "yearmonth": {
+      "type": "text"
+    },
+    "CYM": {
+      "type": "string"
+    },
+    "contentImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

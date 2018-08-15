@@ -1,0 +1,47 @@
+
+<section>
+    <h1>Add new article !</h1>
+
+    <label for="title">
+        <span>Title :</span>
+        <!-- name of the bakery entity -->
+        <input type="text" name="title" id="title" />
+    </label>
+    <label for="content">
+        <span>Content :</span>
+        <!-- name of the bakery entity -->
+        <input type="text" name="content" id="content" />
+    </label>
+
+
+    <button id="add">Add</button>
+    <div id="article"></div>
+</section>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+
+    // to get the value name to create an entity
+    const name = document.getElementById('title');
+    // to get the value rating to create an entity
+    const content = document.getElementById('content');
+    // to listen to click event and send our request
+    const add = document.getElementById('add');
+    const article = document.getElementById('article');
+    socket.on('article_ready', res => article.innerHTML += `<div>- ${res.title} is ${res.content}/ is a good post</div>`);
+
+    add.addEventListener('click', () => { // listen to click event
+        // send a post request with our input value
+        fetch('/article', {
+            method: 'post',
+            headers: { "Content-type": "application/x-www-form-urlencoded; charset=UTF-8" },
+            body: `title=${title.value}&content=${content.value}`
+        })
+            .then((res) => {
+                if (res.status !== 200) return;
+                res.json().then((data) => console.log(data));
+            }
+            )
+            .catch((err) => console.log('Fetch Error :-S', err));
+    });
+</script>

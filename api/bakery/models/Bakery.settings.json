@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "bakery",
+  "info": {
+    "name": "bakery",
+    "description": "https://connect.adfab.fr/cms/strapi-socket-io"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "multiple": false
+    },
+    "rating": {
+      "type": "integer",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,63 @@
+<section>
+    <h1>Add new article !</h1>
+
+    <label for="title">
+        <span>Title :</span>
+        <!-- name of the bakery entity -->
+        <input type="text" name="title" id="title" />
+    </label>
+    <label for="content">
+        <span>Content :</span>
+        <!-- name of the bakery entity -->
+        <input type="text" name="content" id="content" />
+    </label>
+
+
+    <button id="add">Add</button>
+    <div id="article"></div>
+</section>
+<!-- <script src="/socket.io/socket.io.js"></script> -->
+<script>
+        const add = document.getElementById('add');
+        const article = document.getElementById('article');
+        add.addEventListener('click', () => { // listen to click event
+         
+    let article = {};
+    article.title = `${title.value}`;
+    article.content =  `${content.value}`;
+    // send a post request with our input value
+    fetch('/article', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+       
+        body: JSON.stringify(article)
+    })
+        .then((res) => {
+            if (res.status !== 200) return;
+            res.json().then((data) => console.log(data));
+        }
+        )
+        .catch((err) => console.log('Fetch Error :-S', err));
+
+      /*  fetch('/article', {
+            method: 'post',
+            headers: { "Content-type": "application/x-www-form-urlencoded; charset=UTF-8" },
+            body: `title=${title.value}&content=${content.value}`
+    
+    
+        })
+            .then((res) => {
+                if (res.status !== 200) return;
+                res.json().then((data) => console.log(data));
+            }
+            )
+            .catch((err) => console.log('Fetch Error :-S', err));
+    
+    */
+
+});
+
+</script>

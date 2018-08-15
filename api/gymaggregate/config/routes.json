@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gymaggregate",
+      "handler": "Gymaggregate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gymaggregate/count",
+      "handler": "Gymaggregate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gymaggregate/:_id",
+      "handler": "Gymaggregate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gymaggregate",
+      "handler": "Gymaggregate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gymaggregate/:_id",
+      "handler": "Gymaggregate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gymaggregate/:_id",
+      "handler": "Gymaggregate.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

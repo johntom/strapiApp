@@ -1,0 +1,33 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "127.0.0.1",
+        "port": 27017,
+        "database": "strapi-blog",
+        "username": "",
+        "password": "",
+        "authenticationDatabase": "strapi-auth",
+        "ssl": false
+      },
+      "options": {}
+    },
+    "parktower": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "127.0.0.1",
+        "port": 27017,
+        "database": "parktower",
+        "username": "",
+        "password": "",
+        "authenticationDatabase": "strapi-auth",
+        "ssl": false
+      },
+      "options": {}
+    }
+  }
+}
